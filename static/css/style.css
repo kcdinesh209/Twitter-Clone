@@ -110,6 +110,7 @@ html,body{
 
  .posts li .name_body .name{
     font-weight: bold;
+    font-size: 25px;
 }
 .posts li .name_body .datetime{
     font-weight: gray;
