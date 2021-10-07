@@ -14,16 +14,16 @@ html,body{
 
     
 /***********TITLE***************/
- #title{
-     
-     display: flex;
-     margin: 0 auto;
-     max-width: 60%;
-     height: 7%;
-     border-bottom: rgba(204, 204, 204, 0.5);
-     border-left: 1px solid rgba(8, 192, 238, 0.959);
-     border-right: 1px  solid rgba(8, 192, 238, 0.959);
- }
+#title {
+    display: flex;
+    margin: 0 auto;
+    max-width: 60%;
+    height: 10%;
+    border-bottom: 1px solid rgba(8, 192, 238, 0.959);
+    border-left: 1px solid rgba(8, 192, 238, 0.959);
+    border-right: 1px solid rgba(8, 192, 238, 0.959);
+    border-top: 1px solid rgba(8, 192, 238, 0.959);
+}
 
  h1{
      
@@ -138,4 +138,11 @@ p{
 
 .pic-browse{
     margin-right: 300px;
+}
+
+
+.cancel-botton{
+    margin-right: 40%;
+    margin-left: 40%;
+
 }

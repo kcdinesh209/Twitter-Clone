@@ -1,7 +1,7 @@
 {% extends "base.html" %} 
 {% block content %} 
 {% load static %}
-<section id='title'>
+<section class='title'>
     <img class="First-logo" src="/static/img/twitter.png">
     <h1> Home</h1>
 </section>
@@ -10,15 +10,23 @@
     <section class = "post_form">
        <form action="/" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            <input type="text" name="name" placeholder=" Your Name" required>
-            <textarea name="body" placeholder="What's Happening?" required></textarea>
-            <div class="pic-browse">
-                <input type="file" name="image" value="Browse..">
+            <div class="input-area">
+                <input type="text" name="name" placeholder=" Your Name" required>
+                <textarea name="body" placeholder="What's Happening?" required></textarea>
             </div>
-           <div class="but">
-                <input type="submit" value="Tweet" />
-           </div>
-            
+                <div class="bottom-area">
+                    <div class="mb-0">
+                        <input
+                             class="form-control form-control-sm"
+                             name="image"
+                             type="file"
+                        />
+                    </div>
+                    
+        {% csrf_token %}
+                    <button class="btn" type="submit">Tweet</button>
+                </div>
+            </div>
         </form>
     </section>
     

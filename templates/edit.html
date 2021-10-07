@@ -1,23 +1,25 @@
 {% extends "base.html" %} 
 {% block content %} 
 {% load static %}
-<section id='title'>
-    <img src="/static/img/twitter.png">
-    <h1> Home</h1>
+<section class='title'>
+    <img class="First-logo" src="/static/img/twitter.png">
+    <h1>Edit</h1>
 </section>
 <section class ="content">
-    
-    
     <section class = "post_form">
        <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            <input type="text" name="name" placeholder=" Your Name" value="{{post.name}}" required>
-            <textarea name="body" placeholder="What's Happening?" required>{{post.body}}</textarea>
-            <label for={{post.name}}></label>
-            <input type="file" name="image">
-            {% if post.image.url %}
-            <img class="post-border" src="{{post.image.url}}" style="width: 370px; height:370px;">
-            {% endif %}
+            <div class="input-area">
+                <input type="text" name="name" placeholder=" Your Name" value="{{post.name}}" required>
+                <textarea name="body" placeholder="What's Happening?" required>{{post.body}}</textarea>
+                <label for={{post.name}}></label>
+            </div>
+            <div id="choose-btn">
+                <input type="file" name="image">
+                {% if post.image.url %}
+                <img class="post-border" src="{{post.image.url}}" style="width: 370px; height:370px;">
+                {% endif %}
+            </div>
             <div class="update-edit-buttons">
                 <a  class="cancel-anchor" href="/">
                     <input class="cancel-button" type='button' value="cancel" id="delete">
