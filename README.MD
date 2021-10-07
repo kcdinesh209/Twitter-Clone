@@ -1,0 +1,23 @@
+# Twitter-Clone
+A sample web page of twitter
+Twitter Clone
+Let's make simple Twitter. Users can post tweets and see everyone's them.
+To make the project simple, we do not have a sign/login function.
+So there are not user accounts and follow function. You can challenge after you finish the course.
+Check out [LIVE DEMO here!!](https://twitter-clone-aishwarya.herokuapp.com/)
+# Screenshot
+<img width="681" alt="Screen Shot 2021-10-07 at 3 20 21 AM" src="https://user-images.githubusercontent.com/85979934/136337821-fa71f7bc-6dbc-4343-acbd-ecf8786bb81e.png">
+
+# Tech used
+* Html
+* Css
+* Bootstrap
+* Javascript / JQuery
+* Django
+* Cloudinary (To host uploaded images on CDN)
+# User Story
+* Users can post tweets.
+* Users can edit tweets.
+* Users can delete tweets.
+* Users can send a like to a tweet.
+(1 MB)
