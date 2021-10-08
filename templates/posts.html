@@ -20,7 +20,7 @@
                              class="form-control form-control-sm"
                              name="image"
                              type="file"
-                             style="border-radius: 2%;"
+                             
                         />
                     </div>
                     
@@ -53,7 +53,7 @@
                     </div>
                     <p>{{post.body}}</p>
                     {% if post.image.url %}
-                    <img class="post-border" src="{{post.image.url}}" style="width: 370px; height:370px;">
+                    <img class="post-border" src="{{post.image.url}}" style="width: 370px; height:370px; border-radius: 2%;">
                     {% endif %}
                     <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
                         {% csrf_token %}
